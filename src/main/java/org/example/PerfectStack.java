@@ -1,10 +1,11 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PerfectStack {
-    public static final List stack = new ArrayList();
+    public static final List stack = Collections.unmodifiableList(new ArrayList<>());
 
     public void push(Integer integer) {
         stack.add(0, integer);
